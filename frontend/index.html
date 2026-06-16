@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PDF Chat</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="sidebar">
+        <div>
+            <h3>Documents</h3>
+            <div id="docList"></div>
+        </div>
+        <div class="sidebar-upload">
+            <hr>
+            <input type="file" id="pdfInput" accept="application/pdf">
+            <button onclick="uploadPDF()">Upload PDF</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="header" id="chatHeader">PDF Chat</div>
+        <div class="chat" id="chat"></div>
+        <div class="input-bar">
+            <input id="input" placeholder="Ask something...">
+            <button onclick="send()">Send</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

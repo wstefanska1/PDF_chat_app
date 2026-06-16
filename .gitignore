@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+venv/
+data/documents/
+chroma_langchain_db/
+*.pdf
+
+data/documents/.gitkeep
